@@ -1,0 +1,862 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A105EE911B4571C70029BE4C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A105EE901B4571C70029BE4C /* main.m */; };
+		A105EE941B4571C70029BE4C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A105EE931B4571C70029BE4C /* AppDelegate.m */; };
+		A105EE9C1B4571C70029BE4C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A105EE9B1B4571C70029BE4C /* Images.xcassets */; };
+		A105EEAB1B4571C80029BE4C /* SmartLampTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A105EEAA1B4571C80029BE4C /* SmartLampTests.m */; };
+		A105EEBA1B46CEF70029BE4C /* ColorPickerKnob.png in Resources */ = {isa = PBXBuildFile; fileRef = A105EEB61B46CEF70029BE4C /* ColorPickerKnob.png */; };
+		A105EEBB1B46CEF70029BE4C /* ColorPickerKnob@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A105EEB71B46CEF70029BE4C /* ColorPickerKnob@2x.png */; };
+		A105EEC01B46CFD50029BE4C /* KZColorPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = A105EEBF1B46CFD50029BE4C /* KZColorPicker.m */; };
+		A105EEC61B46D2370029BE4C /* KZColorPickerSwatchView.m in Sources */ = {isa = PBXBuildFile; fileRef = A105EEC51B46D2370029BE4C /* KZColorPickerSwatchView.m */; };
+		A105EECF1B46D3650029BE4C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A105EECE1B46D3650029BE4C /* UIKit.framework */; };
+		A105EED11B46D4A60029BE4C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A105EED01B46D4A60029BE4C /* Foundation.framework */; };
+		A105EED31B46D4BA0029BE4C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A105EED21B46D4BA0029BE4C /* CoreGraphics.framework */; };
+		A105EED81B46D5690029BE4C /* KZColorPickerAlphaSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = A105EED51B46D5680029BE4C /* KZColorPickerAlphaSlider.m */; };
+		A105EED91B46D5690029BE4C /* KZColorPickerBrightnessSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = A105EED71B46D5690029BE4C /* KZColorPickerBrightnessSlider.m */; };
+		A105EEDC1B46D5780029BE4C /* HSV.c in Sources */ = {isa = PBXBuildFile; fileRef = A105EEDA1B46D5780029BE4C /* HSV.c */; };
+		A105EEE11B46D61D0029BE4C /* KZUnitSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = A105EEDE1B46D61D0029BE4C /* KZUnitSlider.m */; };
+		A105EEE51B46D8FC0029BE4C /* CheckerBoard.png in Resources */ = {isa = PBXBuildFile; fileRef = A105EEE31B46D8FC0029BE4C /* CheckerBoard.png */; };
+		A105EEE61B46D8FC0029BE4C /* CheckerBoard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A105EEE41B46D8FC0029BE4C /* CheckerBoard@2x.png */; };
+		A105EEE91B46DF2B0029BE4C /* SmartLampViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A105EEE81B46DF2B0029BE4C /* SmartLampViewController.m */; };
+		A1625EBE1BBFB011007046A0 /* IASKAppSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1625EB61BBFB011007046A0 /* IASKAppSettingsViewController.m */; settings = {ASSET_TAGS = (); }; };
+		A1625EBF1BBFB011007046A0 /* IASKAppSettingsWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1625EB81BBFB011007046A0 /* IASKAppSettingsWebViewController.m */; settings = {ASSET_TAGS = (); }; };
+		A1625EC01BBFB011007046A0 /* IASKMultipleValueSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = A1625EBA1BBFB011007046A0 /* IASKMultipleValueSelection.m */; settings = {ASSET_TAGS = (); }; };
+		A1625EC11BBFB011007046A0 /* IASKSpecifierValuesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1625EBC1BBFB011007046A0 /* IASKSpecifierValuesViewController.m */; settings = {ASSET_TAGS = (); }; };
+		A1625ECC1BBFB01F007046A0 /* IASKSettingsReader.m in Sources */ = {isa = PBXBuildFile; fileRef = A1625EC31BBFB01F007046A0 /* IASKSettingsReader.m */; settings = {ASSET_TAGS = (); }; };
+		A1625ECD1BBFB01F007046A0 /* IASKSettingsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = A1625EC51BBFB01F007046A0 /* IASKSettingsStore.m */; settings = {ASSET_TAGS = (); }; };
+		A1625ECE1BBFB01F007046A0 /* IASKSettingsStoreFile.m in Sources */ = {isa = PBXBuildFile; fileRef = A1625EC71BBFB01F007046A0 /* IASKSettingsStoreFile.m */; settings = {ASSET_TAGS = (); }; };
+		A1625ECF1BBFB01F007046A0 /* IASKSettingsStoreUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = A1625EC91BBFB01F007046A0 /* IASKSettingsStoreUserDefaults.m */; settings = {ASSET_TAGS = (); }; };
+		A1625ED01BBFB01F007046A0 /* IASKSpecifier.m in Sources */ = {isa = PBXBuildFile; fileRef = A1625ECB1BBFB01F007046A0 /* IASKSpecifier.m */; settings = {ASSET_TAGS = (); }; };
+		A1625EDB1BBFB02A007046A0 /* IASKPSSliderSpecifierViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A1625ED21BBFB02A007046A0 /* IASKPSSliderSpecifierViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		A1625EDC1BBFB02A007046A0 /* IASKPSTextFieldSpecifierViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A1625ED41BBFB02A007046A0 /* IASKPSTextFieldSpecifierViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		A1625EDD1BBFB02A007046A0 /* IASKSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = A1625ED61BBFB02A007046A0 /* IASKSlider.m */; settings = {ASSET_TAGS = (); }; };
+		A1625EDE1BBFB02A007046A0 /* IASKSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = A1625ED81BBFB02A007046A0 /* IASKSwitch.m */; settings = {ASSET_TAGS = (); }; };
+		A1625EDF1BBFB02A007046A0 /* IASKTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A1625EDA1BBFB02A007046A0 /* IASKTextField.m */; settings = {ASSET_TAGS = (); }; };
+		A163562E1BB5AF19000AEDFF /* SwatchColor.png in Resources */ = {isa = PBXBuildFile; fileRef = A163562C1BB5AF19000AEDFF /* SwatchColor.png */; settings = {ASSET_TAGS = (); }; };
+		A163562F1BB5AF19000AEDFF /* SwatchColor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A163562D1BB5AF19000AEDFF /* SwatchColor@2x.png */; settings = {ASSET_TAGS = (); }; };
+		A1B23B9B1B479136003A8CCF /* KZColorStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B23B9A1B479136003A8CCF /* KZColorStatusView.m */; };
+		A1B330EA1BEF0A6900A645A2 /* RSColorFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B330E31BEF0A6900A645A2 /* RSColorFunctions.m */; settings = {ASSET_TAGS = (); }; };
+		A1B330EB1BEF0A6900A645A2 /* RSColorPickerState.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B330E51BEF0A6900A645A2 /* RSColorPickerState.m */; settings = {ASSET_TAGS = (); }; };
+		A1B330EC1BEF0A6900A645A2 /* RSColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B330E71BEF0A6900A645A2 /* RSColorPickerView.m */; settings = {ASSET_TAGS = (); }; };
+		A1B330ED1BEF0A6900A645A2 /* RSGenerateOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B330E91BEF0A6900A645A2 /* RSGenerateOperation.m */; settings = {ASSET_TAGS = (); }; };
+		A1B330F11BEF0A9200A645A2 /* ANImageBitmapRep.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B330F01BEF0A9200A645A2 /* ANImageBitmapRep.m */; settings = {ASSET_TAGS = (); }; };
+		A1B330F91BEF0AB500A645A2 /* NSImage+ANImageBitmapRep.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B330F41BEF0AB500A645A2 /* NSImage+ANImageBitmapRep.m */; settings = {ASSET_TAGS = (); }; };
+		A1B330FA1BEF0AB500A645A2 /* OSCommonImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B330F61BEF0AB500A645A2 /* OSCommonImage.m */; settings = {ASSET_TAGS = (); }; };
+		A1B330FB1BEF0AB500A645A2 /* UIImage+ANImageBitmapRep.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B330F81BEF0AB500A645A2 /* UIImage+ANImageBitmapRep.m */; settings = {ASSET_TAGS = (); }; };
+		A1B331011BEF0ACE00A645A2 /* CGContextCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B330FE1BEF0ACE00A645A2 /* CGContextCreator.m */; settings = {ASSET_TAGS = (); }; };
+		A1B331021BEF0ACE00A645A2 /* CGImageContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B331001BEF0ACE00A645A2 /* CGImageContainer.m */; settings = {ASSET_TAGS = (); }; };
+		A1B331101BEF0AF500A645A2 /* BitmapContextManipulator.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B331051BEF0AF500A645A2 /* BitmapContextManipulator.m */; settings = {ASSET_TAGS = (); }; };
+		A1B331111BEF0AF500A645A2 /* BitmapContextRep.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B331071BEF0AF500A645A2 /* BitmapContextRep.m */; settings = {ASSET_TAGS = (); }; };
+		A1B331121BEF0AF500A645A2 /* BitmapCropManipulator.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B331091BEF0AF500A645A2 /* BitmapCropManipulator.m */; settings = {ASSET_TAGS = (); }; };
+		A1B331131BEF0AF500A645A2 /* BitmapDrawManipulator.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B3310B1BEF0AF500A645A2 /* BitmapDrawManipulator.m */; settings = {ASSET_TAGS = (); }; };
+		A1B331141BEF0AF500A645A2 /* BitmapRotationManipulator.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B3310D1BEF0AF500A645A2 /* BitmapRotationManipulator.m */; settings = {ASSET_TAGS = (); }; };
+		A1B331151BEF0AF500A645A2 /* BitmapScaleManipulator.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B3310F1BEF0AF500A645A2 /* BitmapScaleManipulator.m */; settings = {ASSET_TAGS = (); }; };
+		A1CC8E541B5107F700A7731F /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A1CC8E531B5107F700A7731F /* Settings.bundle */; };
+		A1E14A1B1B49514600516EDD /* RearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E14A1A1B49514600516EDD /* RearViewController.m */; };
+		A1E14A1D1B49519200516EDD /* RearViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1E14A1C1B49519200516EDD /* RearViewController.xib */; };
+		A1E14A201B49551100516EDD /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E14A1F1B49551100516EDD /* SWRevealViewController.m */; };
+		A1E14A231B49867D00516EDD /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E14A221B49867D00516EDD /* CoreBluetooth.framework */; };
+		A1F2EB091B8F5DD300A506CE /* BLECell.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F2EB021B8F5DD300A506CE /* BLECell.m */; };
+		A1F2EB0A1B8F5DD300A506CE /* LeDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F2EB041B8F5DD300A506CE /* LeDataService.m */; };
+		A1F2EB0B1B8F5DD300A506CE /* LeDiscovery.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F2EB061B8F5DD300A506CE /* LeDiscovery.m */; };
+		A1F2EB0C1B8F5DD300A506CE /* ScannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F2EB081B8F5DD300A506CE /* ScannerViewController.m */; };
+		A1F2EB1B1BA3236B00A506CE /* ScannerView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F2EB1A1BA3236B00A506CE /* ScannerView.storyboard */; };
+		A1F312071B515E6E00FAC554 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F312061B515E6E00FAC554 /* AboutViewController.m */; };
+		A1F312091B51603F00FAC554 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1F312081B51603F00FAC554 /* AboutViewController.xib */; };
+		A1F3A18C1B47E61500E3B7A4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1F3A18B1B47E61500E3B7A4 /* Default-568h@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A105EEA51B4571C80029BE4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A105EE831B4571C70029BE4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A105EE8A1B4571C70029BE4C;
+			remoteInfo = SmartLamp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A105EE8B1B4571C70029BE4C /* SmartLamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartLamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A105EE8F1B4571C70029BE4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A105EE901B4571C70029BE4C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A105EE921B4571C70029BE4C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A105EE931B4571C70029BE4C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A105EE9B1B4571C70029BE4C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A105EEA41B4571C80029BE4C /* SmartLampTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartLampTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A105EEA91B4571C80029BE4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A105EEAA1B4571C80029BE4C /* SmartLampTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartLampTests.m; sourceTree = "<group>"; };
+		A105EEB61B46CEF70029BE4C /* ColorPickerKnob.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ColorPickerKnob.png; path = ColorPicker/ColorPickerKnob.png; sourceTree = "<group>"; };
+		A105EEB71B46CEF70029BE4C /* ColorPickerKnob@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ColorPickerKnob@2x.png"; path = "ColorPicker/ColorPickerKnob@2x.png"; sourceTree = "<group>"; };
+		A105EEBE1B46CFD50029BE4C /* KZColorPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KZColorPicker.h; path = ColorPicker/KZColorPicker.h; sourceTree = "<group>"; };
+		A105EEBF1B46CFD50029BE4C /* KZColorPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KZColorPicker.m; path = ColorPicker/KZColorPicker.m; sourceTree = "<group>"; };
+		A105EEC41B46D2370029BE4C /* KZColorPickerSwatchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KZColorPickerSwatchView.h; path = ColorPicker/KZColorPickerSwatchView.h; sourceTree = "<group>"; };
+		A105EEC51B46D2370029BE4C /* KZColorPickerSwatchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KZColorPickerSwatchView.m; path = ColorPicker/KZColorPickerSwatchView.m; sourceTree = "<group>"; };
+		A105EECE1B46D3650029BE4C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A105EED01B46D4A60029BE4C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A105EED21B46D4BA0029BE4C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A105EED41B46D5680029BE4C /* KZColorPickerAlphaSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KZColorPickerAlphaSlider.h; path = ColorPicker/KZColorPickerAlphaSlider.h; sourceTree = "<group>"; };
+		A105EED51B46D5680029BE4C /* KZColorPickerAlphaSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KZColorPickerAlphaSlider.m; path = ColorPicker/KZColorPickerAlphaSlider.m; sourceTree = "<group>"; };
+		A105EED61B46D5690029BE4C /* KZColorPickerBrightnessSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KZColorPickerBrightnessSlider.h; path = ColorPicker/KZColorPickerBrightnessSlider.h; sourceTree = "<group>"; };
+		A105EED71B46D5690029BE4C /* KZColorPickerBrightnessSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KZColorPickerBrightnessSlider.m; path = ColorPicker/KZColorPickerBrightnessSlider.m; sourceTree = "<group>"; };
+		A105EEDA1B46D5780029BE4C /* HSV.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = HSV.c; path = ColorPicker/HSV.c; sourceTree = "<group>"; };
+		A105EEDB1B46D5780029BE4C /* HSV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HSV.h; path = ColorPicker/HSV.h; sourceTree = "<group>"; };
+		A105EEDD1B46D61D0029BE4C /* KZUnitSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KZUnitSlider.h; path = ColorPicker/KZUnitSlider.h; sourceTree = "<group>"; };
+		A105EEDE1B46D61D0029BE4C /* KZUnitSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KZUnitSlider.m; path = ColorPicker/KZUnitSlider.m; sourceTree = "<group>"; };
+		A105EEE31B46D8FC0029BE4C /* CheckerBoard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CheckerBoard.png; path = ColorPicker/CheckerBoard.png; sourceTree = "<group>"; };
+		A105EEE41B46D8FC0029BE4C /* CheckerBoard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CheckerBoard@2x.png"; path = "ColorPicker/CheckerBoard@2x.png"; sourceTree = "<group>"; };
+		A105EEE71B46DF2B0029BE4C /* SmartLampViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartLampViewController.h; sourceTree = "<group>"; };
+		A105EEE81B46DF2B0029BE4C /* SmartLampViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmartLampViewController.m; sourceTree = "<group>"; };
+		A1625EB51BBFB011007046A0 /* IASKAppSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IASKAppSettingsViewController.h; path = Settings/Controllers/IASKAppSettingsViewController.h; sourceTree = "<group>"; };
+		A1625EB61BBFB011007046A0 /* IASKAppSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IASKAppSettingsViewController.m; path = Settings/Controllers/IASKAppSettingsViewController.m; sourceTree = "<group>"; };
+		A1625EB71BBFB011007046A0 /* IASKAppSettingsWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IASKAppSettingsWebViewController.h; path = Settings/Controllers/IASKAppSettingsWebViewController.h; sourceTree = "<group>"; };
+		A1625EB81BBFB011007046A0 /* IASKAppSettingsWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IASKAppSettingsWebViewController.m; path = Settings/Controllers/IASKAppSettingsWebViewController.m; sourceTree = "<group>"; };
+		A1625EB91BBFB011007046A0 /* IASKMultipleValueSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IASKMultipleValueSelection.h; path = Settings/Controllers/IASKMultipleValueSelection.h; sourceTree = "<group>"; };
+		A1625EBA1BBFB011007046A0 /* IASKMultipleValueSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IASKMultipleValueSelection.m; path = Settings/Controllers/IASKMultipleValueSelection.m; sourceTree = "<group>"; };
+		A1625EBB1BBFB011007046A0 /* IASKSpecifierValuesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IASKSpecifierValuesViewController.h; path = Settings/Controllers/IASKSpecifierValuesViewController.h; sourceTree = "<group>"; };
+		A1625EBC1BBFB011007046A0 /* IASKSpecifierValuesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IASKSpecifierValuesViewController.m; path = Settings/Controllers/IASKSpecifierValuesViewController.m; sourceTree = "<group>"; };
+		A1625EBD1BBFB011007046A0 /* IASKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IASKViewController.h; path = Settings/Controllers/IASKViewController.h; sourceTree = "<group>"; };
+		A1625EC21BBFB01F007046A0 /* IASKSettingsReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IASKSettingsReader.h; path = Settings/Models/IASKSettingsReader.h; sourceTree = "<group>"; };
+		A1625EC31BBFB01F007046A0 /* IASKSettingsReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IASKSettingsReader.m; path = Settings/Models/IASKSettingsReader.m; sourceTree = "<group>"; };
+		A1625EC41BBFB01F007046A0 /* IASKSettingsStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IASKSettingsStore.h; path = Settings/Models/IASKSettingsStore.h; sourceTree = "<group>"; };
+		A1625EC51BBFB01F007046A0 /* IASKSettingsStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IASKSettingsStore.m; path = Settings/Models/IASKSettingsStore.m; sourceTree = "<group>"; };
+		A1625EC61BBFB01F007046A0 /* IASKSettingsStoreFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IASKSettingsStoreFile.h; path = Settings/Models/IASKSettingsStoreFile.h; sourceTree = "<group>"; };
+		A1625EC71BBFB01F007046A0 /* IASKSettingsStoreFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IASKSettingsStoreFile.m; path = Settings/Models/IASKSettingsStoreFile.m; sourceTree = "<group>"; };
+		A1625EC81BBFB01F007046A0 /* IASKSettingsStoreUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IASKSettingsStoreUserDefaults.h; path = Settings/Models/IASKSettingsStoreUserDefaults.h; sourceTree = "<group>"; };
+		A1625EC91BBFB01F007046A0 /* IASKSettingsStoreUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IASKSettingsStoreUserDefaults.m; path = Settings/Models/IASKSettingsStoreUserDefaults.m; sourceTree = "<group>"; };
+		A1625ECA1BBFB01F007046A0 /* IASKSpecifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IASKSpecifier.h; path = Settings/Models/IASKSpecifier.h; sourceTree = "<group>"; };
+		A1625ECB1BBFB01F007046A0 /* IASKSpecifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IASKSpecifier.m; path = Settings/Models/IASKSpecifier.m; sourceTree = "<group>"; };
+		A1625ED11BBFB02A007046A0 /* IASKPSSliderSpecifierViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IASKPSSliderSpecifierViewCell.h; path = Settings/Views/IASKPSSliderSpecifierViewCell.h; sourceTree = "<group>"; };
+		A1625ED21BBFB02A007046A0 /* IASKPSSliderSpecifierViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IASKPSSliderSpecifierViewCell.m; path = Settings/Views/IASKPSSliderSpecifierViewCell.m; sourceTree = "<group>"; };
+		A1625ED31BBFB02A007046A0 /* IASKPSTextFieldSpecifierViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IASKPSTextFieldSpecifierViewCell.h; path = Settings/Views/IASKPSTextFieldSpecifierViewCell.h; sourceTree = "<group>"; };
+		A1625ED41BBFB02A007046A0 /* IASKPSTextFieldSpecifierViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IASKPSTextFieldSpecifierViewCell.m; path = Settings/Views/IASKPSTextFieldSpecifierViewCell.m; sourceTree = "<group>"; };
+		A1625ED51BBFB02A007046A0 /* IASKSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IASKSlider.h; path = Settings/Views/IASKSlider.h; sourceTree = "<group>"; };
+		A1625ED61BBFB02A007046A0 /* IASKSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IASKSlider.m; path = Settings/Views/IASKSlider.m; sourceTree = "<group>"; };
+		A1625ED71BBFB02A007046A0 /* IASKSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IASKSwitch.h; path = Settings/Views/IASKSwitch.h; sourceTree = "<group>"; };
+		A1625ED81BBFB02A007046A0 /* IASKSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IASKSwitch.m; path = Settings/Views/IASKSwitch.m; sourceTree = "<group>"; };
+		A1625ED91BBFB02A007046A0 /* IASKTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IASKTextField.h; path = Settings/Views/IASKTextField.h; sourceTree = "<group>"; };
+		A1625EDA1BBFB02A007046A0 /* IASKTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IASKTextField.m; path = Settings/Views/IASKTextField.m; sourceTree = "<group>"; };
+		A163562C1BB5AF19000AEDFF /* SwatchColor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SwatchColor.png; path = ColorPicker/SwatchColor.png; sourceTree = "<group>"; };
+		A163562D1BB5AF19000AEDFF /* SwatchColor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SwatchColor@2x.png"; path = "ColorPicker/SwatchColor@2x.png"; sourceTree = "<group>"; };
+		A1B23B991B479136003A8CCF /* KZColorStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KZColorStatusView.h; path = ColorPicker/KZColorStatusView.h; sourceTree = "<group>"; };
+		A1B23B9A1B479136003A8CCF /* KZColorStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KZColorStatusView.m; path = ColorPicker/KZColorStatusView.m; sourceTree = "<group>"; };
+		A1B330E21BEF0A6900A645A2 /* RSColorFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSColorFunctions.h; path = ColorPicker/ColorPickerWheel/RSColorFunctions.h; sourceTree = "<group>"; };
+		A1B330E31BEF0A6900A645A2 /* RSColorFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSColorFunctions.m; path = ColorPicker/ColorPickerWheel/RSColorFunctions.m; sourceTree = "<group>"; };
+		A1B330E41BEF0A6900A645A2 /* RSColorPickerState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSColorPickerState.h; path = ColorPicker/ColorPickerWheel/RSColorPickerState.h; sourceTree = "<group>"; };
+		A1B330E51BEF0A6900A645A2 /* RSColorPickerState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSColorPickerState.m; path = ColorPicker/ColorPickerWheel/RSColorPickerState.m; sourceTree = "<group>"; };
+		A1B330E61BEF0A6900A645A2 /* RSColorPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSColorPickerView.h; path = ColorPicker/ColorPickerWheel/RSColorPickerView.h; sourceTree = "<group>"; };
+		A1B330E71BEF0A6900A645A2 /* RSColorPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSColorPickerView.m; path = ColorPicker/ColorPickerWheel/RSColorPickerView.m; sourceTree = "<group>"; };
+		A1B330E81BEF0A6900A645A2 /* RSGenerateOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSGenerateOperation.h; path = ColorPicker/ColorPickerWheel/RSGenerateOperation.h; sourceTree = "<group>"; };
+		A1B330E91BEF0A6900A645A2 /* RSGenerateOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSGenerateOperation.m; path = ColorPicker/ColorPickerWheel/RSGenerateOperation.m; sourceTree = "<group>"; };
+		A1B330EF1BEF0A9200A645A2 /* ANImageBitmapRep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ANImageBitmapRep.h; path = ColorPicker/ColorPickerWheel/ANImageBitmapRep/ANImageBitmapRep.h; sourceTree = "<group>"; };
+		A1B330F01BEF0A9200A645A2 /* ANImageBitmapRep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ANImageBitmapRep.m; path = ColorPicker/ColorPickerWheel/ANImageBitmapRep/ANImageBitmapRep.m; sourceTree = "<group>"; };
+		A1B330F31BEF0AB500A645A2 /* NSImage+ANImageBitmapRep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSImage+ANImageBitmapRep.h"; path = "ColorPicker/ColorPickerWheel/ANImageBitmapRep/Compatibility/NSImage+ANImageBitmapRep.h"; sourceTree = "<group>"; };
+		A1B330F41BEF0AB500A645A2 /* NSImage+ANImageBitmapRep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSImage+ANImageBitmapRep.m"; path = "ColorPicker/ColorPickerWheel/ANImageBitmapRep/Compatibility/NSImage+ANImageBitmapRep.m"; sourceTree = "<group>"; };
+		A1B330F51BEF0AB500A645A2 /* OSCommonImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OSCommonImage.h; path = ColorPicker/ColorPickerWheel/ANImageBitmapRep/Compatibility/OSCommonImage.h; sourceTree = "<group>"; };
+		A1B330F61BEF0AB500A645A2 /* OSCommonImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OSCommonImage.m; path = ColorPicker/ColorPickerWheel/ANImageBitmapRep/Compatibility/OSCommonImage.m; sourceTree = "<group>"; };
+		A1B330F71BEF0AB500A645A2 /* UIImage+ANImageBitmapRep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+ANImageBitmapRep.h"; path = "ColorPicker/ColorPickerWheel/ANImageBitmapRep/Compatibility/UIImage+ANImageBitmapRep.h"; sourceTree = "<group>"; };
+		A1B330F81BEF0AB500A645A2 /* UIImage+ANImageBitmapRep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ANImageBitmapRep.m"; path = "ColorPicker/ColorPickerWheel/ANImageBitmapRep/Compatibility/UIImage+ANImageBitmapRep.m"; sourceTree = "<group>"; };
+		A1B330FD1BEF0ACE00A645A2 /* CGContextCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGContextCreator.h; path = ColorPicker/ColorPickerWheel/ANImageBitmapRep/CoreGraphics/CGContextCreator.h; sourceTree = "<group>"; };
+		A1B330FE1BEF0ACE00A645A2 /* CGContextCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGContextCreator.m; path = ColorPicker/ColorPickerWheel/ANImageBitmapRep/CoreGraphics/CGContextCreator.m; sourceTree = "<group>"; };
+		A1B330FF1BEF0ACE00A645A2 /* CGImageContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGImageContainer.h; path = ColorPicker/ColorPickerWheel/ANImageBitmapRep/CoreGraphics/CGImageContainer.h; sourceTree = "<group>"; };
+		A1B331001BEF0ACE00A645A2 /* CGImageContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGImageContainer.m; path = ColorPicker/ColorPickerWheel/ANImageBitmapRep/CoreGraphics/CGImageContainer.m; sourceTree = "<group>"; };
+		A1B331041BEF0AF500A645A2 /* BitmapContextManipulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BitmapContextManipulator.h; path = ColorPicker/ColorPickerWheel/ANImageBitmapRep/Manipulators/BitmapContextManipulator.h; sourceTree = "<group>"; };
+		A1B331051BEF0AF500A645A2 /* BitmapContextManipulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BitmapContextManipulator.m; path = ColorPicker/ColorPickerWheel/ANImageBitmapRep/Manipulators/BitmapContextManipulator.m; sourceTree = "<group>"; };
+		A1B331061BEF0AF500A645A2 /* BitmapContextRep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BitmapContextRep.h; path = ColorPicker/ColorPickerWheel/ANImageBitmapRep/Manipulators/BitmapContextRep.h; sourceTree = "<group>"; };
+		A1B331071BEF0AF500A645A2 /* BitmapContextRep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BitmapContextRep.m; path = ColorPicker/ColorPickerWheel/ANImageBitmapRep/Manipulators/BitmapContextRep.m; sourceTree = "<group>"; };
+		A1B331081BEF0AF500A645A2 /* BitmapCropManipulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BitmapCropManipulator.h; path = ColorPicker/ColorPickerWheel/ANImageBitmapRep/Manipulators/BitmapCropManipulator.h; sourceTree = "<group>"; };
+		A1B331091BEF0AF500A645A2 /* BitmapCropManipulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BitmapCropManipulator.m; path = ColorPicker/ColorPickerWheel/ANImageBitmapRep/Manipulators/BitmapCropManipulator.m; sourceTree = "<group>"; };
+		A1B3310A1BEF0AF500A645A2 /* BitmapDrawManipulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BitmapDrawManipulator.h; path = ColorPicker/ColorPickerWheel/ANImageBitmapRep/Manipulators/BitmapDrawManipulator.h; sourceTree = "<group>"; };
+		A1B3310B1BEF0AF500A645A2 /* BitmapDrawManipulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BitmapDrawManipulator.m; path = ColorPicker/ColorPickerWheel/ANImageBitmapRep/Manipulators/BitmapDrawManipulator.m; sourceTree = "<group>"; };
+		A1B3310C1BEF0AF500A645A2 /* BitmapRotationManipulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BitmapRotationManipulator.h; path = ColorPicker/ColorPickerWheel/ANImageBitmapRep/Manipulators/BitmapRotationManipulator.h; sourceTree = "<group>"; };
+		A1B3310D1BEF0AF500A645A2 /* BitmapRotationManipulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BitmapRotationManipulator.m; path = ColorPicker/ColorPickerWheel/ANImageBitmapRep/Manipulators/BitmapRotationManipulator.m; sourceTree = "<group>"; };
+		A1B3310E1BEF0AF500A645A2 /* BitmapScaleManipulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BitmapScaleManipulator.h; path = ColorPicker/ColorPickerWheel/ANImageBitmapRep/Manipulators/BitmapScaleManipulator.h; sourceTree = "<group>"; };
+		A1B3310F1BEF0AF500A645A2 /* BitmapScaleManipulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BitmapScaleManipulator.m; path = ColorPicker/ColorPickerWheel/ANImageBitmapRep/Manipulators/BitmapScaleManipulator.m; sourceTree = "<group>"; };
+		A1CC8E531B5107F700A7731F /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		A1E14A191B49514600516EDD /* RearViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RearViewController.h; path = SlideMenu/RearViewController.h; sourceTree = "<group>"; };
+		A1E14A1A1B49514600516EDD /* RearViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RearViewController.m; path = SlideMenu/RearViewController.m; sourceTree = "<group>"; };
+		A1E14A1C1B49519200516EDD /* RearViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RearViewController.xib; path = SlideMenu/RearViewController.xib; sourceTree = "<group>"; };
+		A1E14A1E1B49551100516EDD /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = SlideMenu/SWRevealViewController.h; sourceTree = "<group>"; };
+		A1E14A1F1B49551100516EDD /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = SlideMenu/SWRevealViewController.m; sourceTree = "<group>"; };
+		A1E14A221B49867D00516EDD /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		A1F2EB011B8F5DD300A506CE /* BLECell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLECell.h; path = Bluetooth/BLECell.h; sourceTree = "<group>"; };
+		A1F2EB021B8F5DD300A506CE /* BLECell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BLECell.m; path = Bluetooth/BLECell.m; sourceTree = "<group>"; };
+		A1F2EB031B8F5DD300A506CE /* LeDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeDataService.h; path = Bluetooth/LeDataService.h; sourceTree = "<group>"; };
+		A1F2EB041B8F5DD300A506CE /* LeDataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeDataService.m; path = Bluetooth/LeDataService.m; sourceTree = "<group>"; };
+		A1F2EB051B8F5DD300A506CE /* LeDiscovery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeDiscovery.h; path = Bluetooth/LeDiscovery.h; sourceTree = "<group>"; };
+		A1F2EB061B8F5DD300A506CE /* LeDiscovery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeDiscovery.m; path = Bluetooth/LeDiscovery.m; sourceTree = "<group>"; };
+		A1F2EB071B8F5DD300A506CE /* ScannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScannerViewController.h; path = Bluetooth/ScannerViewController.h; sourceTree = "<group>"; };
+		A1F2EB081B8F5DD300A506CE /* ScannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScannerViewController.m; path = Bluetooth/ScannerViewController.m; sourceTree = "<group>"; };
+		A1F2EB1A1BA3236B00A506CE /* ScannerView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ScannerView.storyboard; path = Bluetooth/ScannerView.storyboard; sourceTree = "<group>"; };
+		A1F312051B515E6E00FAC554 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AboutViewController.h; path = About/AboutViewController.h; sourceTree = "<group>"; };
+		A1F312061B515E6E00FAC554 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AboutViewController.m; path = About/AboutViewController.m; sourceTree = "<group>"; };
+		A1F312081B51603F00FAC554 /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AboutViewController.xib; path = About/AboutViewController.xib; sourceTree = "<group>"; };
+		A1F3A18B1B47E61500E3B7A4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A105EE881B4571C70029BE4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1E14A231B49867D00516EDD /* CoreBluetooth.framework in Frameworks */,
+				A105EED31B46D4BA0029BE4C /* CoreGraphics.framework in Frameworks */,
+				A105EED11B46D4A60029BE4C /* Foundation.framework in Frameworks */,
+				A105EECF1B46D3650029BE4C /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A105EEA11B4571C80029BE4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A105EE821B4571C70029BE4C = {
+			isa = PBXGroup;
+			children = (
+				A1CC8E531B5107F700A7731F /* Settings.bundle */,
+				A1F3A18B1B47E61500E3B7A4 /* Default-568h@2x.png */,
+				A105EE8D1B4571C70029BE4C /* SmartLamp */,
+				A105EEA71B4571C80029BE4C /* SmartLampTests */,
+				A105EECB1B46D3410029BE4C /* Frameworks */,
+				A105EE8C1B4571C70029BE4C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A105EE8C1B4571C70029BE4C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A105EE8B1B4571C70029BE4C /* SmartLamp.app */,
+				A105EEA41B4571C80029BE4C /* SmartLampTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A105EE8D1B4571C70029BE4C /* SmartLamp */ = {
+			isa = PBXGroup;
+			children = (
+				A1F312041B515E1900FAC554 /* About */,
+				A1F2EB001B8F5D9600A506CE /* Bluetooth */,
+				A105EEB41B46CDDB0029BE4C /* ColorPicker */,
+				A1625EAB1BBFAF61007046A0 /* Settings */,
+				A11F646D1B494596008E1101 /* SlideMenu */,
+				A105EE9B1B4571C70029BE4C /* Images.xcassets */,
+				A105EEE71B46DF2B0029BE4C /* SmartLampViewController.h */,
+				A105EEE81B46DF2B0029BE4C /* SmartLampViewController.m */,
+				A105EE921B4571C70029BE4C /* AppDelegate.h */,
+				A105EE931B4571C70029BE4C /* AppDelegate.m */,
+				A105EE8E1B4571C70029BE4C /* Supporting Files */,
+			);
+			path = SmartLamp;
+			sourceTree = "<group>";
+		};
+		A105EE8E1B4571C70029BE4C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A105EE8F1B4571C70029BE4C /* Info.plist */,
+				A105EE901B4571C70029BE4C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A105EEA71B4571C80029BE4C /* SmartLampTests */ = {
+			isa = PBXGroup;
+			children = (
+				A105EEAA1B4571C80029BE4C /* SmartLampTests.m */,
+				A105EEA81B4571C80029BE4C /* Supporting Files */,
+			);
+			path = SmartLampTests;
+			sourceTree = "<group>";
+		};
+		A105EEA81B4571C80029BE4C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A105EEA91B4571C80029BE4C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A105EEB41B46CDDB0029BE4C /* ColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				A1B330E11BEF0A4100A645A2 /* ColorPickerWheel */,
+				A105EEB51B46CEC70029BE4C /* Images */,
+				A105EEDA1B46D5780029BE4C /* HSV.c */,
+				A105EEDB1B46D5780029BE4C /* HSV.h */,
+				A1B23B991B479136003A8CCF /* KZColorStatusView.h */,
+				A1B23B9A1B479136003A8CCF /* KZColorStatusView.m */,
+				A105EEBE1B46CFD50029BE4C /* KZColorPicker.h */,
+				A105EEBF1B46CFD50029BE4C /* KZColorPicker.m */,
+				A105EED41B46D5680029BE4C /* KZColorPickerAlphaSlider.h */,
+				A105EED51B46D5680029BE4C /* KZColorPickerAlphaSlider.m */,
+				A105EED61B46D5690029BE4C /* KZColorPickerBrightnessSlider.h */,
+				A105EED71B46D5690029BE4C /* KZColorPickerBrightnessSlider.m */,
+				A105EEC41B46D2370029BE4C /* KZColorPickerSwatchView.h */,
+				A105EEC51B46D2370029BE4C /* KZColorPickerSwatchView.m */,
+				A105EEDD1B46D61D0029BE4C /* KZUnitSlider.h */,
+				A105EEDE1B46D61D0029BE4C /* KZUnitSlider.m */,
+			);
+			name = ColorPicker;
+			sourceTree = "<group>";
+		};
+		A105EEB51B46CEC70029BE4C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A105EEE31B46D8FC0029BE4C /* CheckerBoard.png */,
+				A105EEE41B46D8FC0029BE4C /* CheckerBoard@2x.png */,
+				A105EEB61B46CEF70029BE4C /* ColorPickerKnob.png */,
+				A105EEB71B46CEF70029BE4C /* ColorPickerKnob@2x.png */,
+				A163562C1BB5AF19000AEDFF /* SwatchColor.png */,
+				A163562D1BB5AF19000AEDFF /* SwatchColor@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		A105EECB1B46D3410029BE4C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1E14A221B49867D00516EDD /* CoreBluetooth.framework */,
+				A105EED21B46D4BA0029BE4C /* CoreGraphics.framework */,
+				A105EED01B46D4A60029BE4C /* Foundation.framework */,
+				A105EECE1B46D3650029BE4C /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A11F646D1B494596008E1101 /* SlideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				A1E14A191B49514600516EDD /* RearViewController.h */,
+				A1E14A1A1B49514600516EDD /* RearViewController.m */,
+				A1E14A1C1B49519200516EDD /* RearViewController.xib */,
+				A1E14A1E1B49551100516EDD /* SWRevealViewController.h */,
+				A1E14A1F1B49551100516EDD /* SWRevealViewController.m */,
+			);
+			name = SlideMenu;
+			sourceTree = "<group>";
+		};
+		A1625EAB1BBFAF61007046A0 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A1625EB41BBFAFF7007046A0 /* Views */,
+				A1625EB31BBFAFEA007046A0 /* Models */,
+				A1625EB21BBFAFD8007046A0 /* Controllers */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		A1625EB21BBFAFD8007046A0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A1625EB51BBFB011007046A0 /* IASKAppSettingsViewController.h */,
+				A1625EB61BBFB011007046A0 /* IASKAppSettingsViewController.m */,
+				A1625EB71BBFB011007046A0 /* IASKAppSettingsWebViewController.h */,
+				A1625EB81BBFB011007046A0 /* IASKAppSettingsWebViewController.m */,
+				A1625EB91BBFB011007046A0 /* IASKMultipleValueSelection.h */,
+				A1625EBA1BBFB011007046A0 /* IASKMultipleValueSelection.m */,
+				A1625EBB1BBFB011007046A0 /* IASKSpecifierValuesViewController.h */,
+				A1625EBC1BBFB011007046A0 /* IASKSpecifierValuesViewController.m */,
+				A1625EBD1BBFB011007046A0 /* IASKViewController.h */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A1625EB31BBFAFEA007046A0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A1625EC21BBFB01F007046A0 /* IASKSettingsReader.h */,
+				A1625EC31BBFB01F007046A0 /* IASKSettingsReader.m */,
+				A1625EC41BBFB01F007046A0 /* IASKSettingsStore.h */,
+				A1625EC51BBFB01F007046A0 /* IASKSettingsStore.m */,
+				A1625EC61BBFB01F007046A0 /* IASKSettingsStoreFile.h */,
+				A1625EC71BBFB01F007046A0 /* IASKSettingsStoreFile.m */,
+				A1625EC81BBFB01F007046A0 /* IASKSettingsStoreUserDefaults.h */,
+				A1625EC91BBFB01F007046A0 /* IASKSettingsStoreUserDefaults.m */,
+				A1625ECA1BBFB01F007046A0 /* IASKSpecifier.h */,
+				A1625ECB1BBFB01F007046A0 /* IASKSpecifier.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		A1625EB41BBFAFF7007046A0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A1625ED11BBFB02A007046A0 /* IASKPSSliderSpecifierViewCell.h */,
+				A1625ED21BBFB02A007046A0 /* IASKPSSliderSpecifierViewCell.m */,
+				A1625ED31BBFB02A007046A0 /* IASKPSTextFieldSpecifierViewCell.h */,
+				A1625ED41BBFB02A007046A0 /* IASKPSTextFieldSpecifierViewCell.m */,
+				A1625ED51BBFB02A007046A0 /* IASKSlider.h */,
+				A1625ED61BBFB02A007046A0 /* IASKSlider.m */,
+				A1625ED71BBFB02A007046A0 /* IASKSwitch.h */,
+				A1625ED81BBFB02A007046A0 /* IASKSwitch.m */,
+				A1625ED91BBFB02A007046A0 /* IASKTextField.h */,
+				A1625EDA1BBFB02A007046A0 /* IASKTextField.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		A1B330E11BEF0A4100A645A2 /* ColorPickerWheel */ = {
+			isa = PBXGroup;
+			children = (
+				A1B330EE1BEF0A7F00A645A2 /* ANImageBitmapRep */,
+				A1B330E21BEF0A6900A645A2 /* RSColorFunctions.h */,
+				A1B330E31BEF0A6900A645A2 /* RSColorFunctions.m */,
+				A1B330E41BEF0A6900A645A2 /* RSColorPickerState.h */,
+				A1B330E51BEF0A6900A645A2 /* RSColorPickerState.m */,
+				A1B330E61BEF0A6900A645A2 /* RSColorPickerView.h */,
+				A1B330E71BEF0A6900A645A2 /* RSColorPickerView.m */,
+				A1B330E81BEF0A6900A645A2 /* RSGenerateOperation.h */,
+				A1B330E91BEF0A6900A645A2 /* RSGenerateOperation.m */,
+			);
+			name = ColorPickerWheel;
+			sourceTree = "<group>";
+		};
+		A1B330EE1BEF0A7F00A645A2 /* ANImageBitmapRep */ = {
+			isa = PBXGroup;
+			children = (
+				A1B331031BEF0AE800A645A2 /* Manipulators */,
+				A1B330FC1BEF0AC100A645A2 /* CoreGraphics */,
+				A1B330F21BEF0AA500A645A2 /* Compatibility */,
+				A1B330EF1BEF0A9200A645A2 /* ANImageBitmapRep.h */,
+				A1B330F01BEF0A9200A645A2 /* ANImageBitmapRep.m */,
+			);
+			name = ANImageBitmapRep;
+			sourceTree = "<group>";
+		};
+		A1B330F21BEF0AA500A645A2 /* Compatibility */ = {
+			isa = PBXGroup;
+			children = (
+				A1B330F31BEF0AB500A645A2 /* NSImage+ANImageBitmapRep.h */,
+				A1B330F41BEF0AB500A645A2 /* NSImage+ANImageBitmapRep.m */,
+				A1B330F51BEF0AB500A645A2 /* OSCommonImage.h */,
+				A1B330F61BEF0AB500A645A2 /* OSCommonImage.m */,
+				A1B330F71BEF0AB500A645A2 /* UIImage+ANImageBitmapRep.h */,
+				A1B330F81BEF0AB500A645A2 /* UIImage+ANImageBitmapRep.m */,
+			);
+			name = Compatibility;
+			sourceTree = "<group>";
+		};
+		A1B330FC1BEF0AC100A645A2 /* CoreGraphics */ = {
+			isa = PBXGroup;
+			children = (
+				A1B330FD1BEF0ACE00A645A2 /* CGContextCreator.h */,
+				A1B330FE1BEF0ACE00A645A2 /* CGContextCreator.m */,
+				A1B330FF1BEF0ACE00A645A2 /* CGImageContainer.h */,
+				A1B331001BEF0ACE00A645A2 /* CGImageContainer.m */,
+			);
+			name = CoreGraphics;
+			sourceTree = "<group>";
+		};
+		A1B331031BEF0AE800A645A2 /* Manipulators */ = {
+			isa = PBXGroup;
+			children = (
+				A1B331041BEF0AF500A645A2 /* BitmapContextManipulator.h */,
+				A1B331051BEF0AF500A645A2 /* BitmapContextManipulator.m */,
+				A1B331061BEF0AF500A645A2 /* BitmapContextRep.h */,
+				A1B331071BEF0AF500A645A2 /* BitmapContextRep.m */,
+				A1B331081BEF0AF500A645A2 /* BitmapCropManipulator.h */,
+				A1B331091BEF0AF500A645A2 /* BitmapCropManipulator.m */,
+				A1B3310A1BEF0AF500A645A2 /* BitmapDrawManipulator.h */,
+				A1B3310B1BEF0AF500A645A2 /* BitmapDrawManipulator.m */,
+				A1B3310C1BEF0AF500A645A2 /* BitmapRotationManipulator.h */,
+				A1B3310D1BEF0AF500A645A2 /* BitmapRotationManipulator.m */,
+				A1B3310E1BEF0AF500A645A2 /* BitmapScaleManipulator.h */,
+				A1B3310F1BEF0AF500A645A2 /* BitmapScaleManipulator.m */,
+			);
+			name = Manipulators;
+			sourceTree = "<group>";
+		};
+		A1F2EB001B8F5D9600A506CE /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				A1F2EB011B8F5DD300A506CE /* BLECell.h */,
+				A1F2EB021B8F5DD300A506CE /* BLECell.m */,
+				A1F2EB031B8F5DD300A506CE /* LeDataService.h */,
+				A1F2EB041B8F5DD300A506CE /* LeDataService.m */,
+				A1F2EB051B8F5DD300A506CE /* LeDiscovery.h */,
+				A1F2EB061B8F5DD300A506CE /* LeDiscovery.m */,
+				A1F2EB1A1BA3236B00A506CE /* ScannerView.storyboard */,
+				A1F2EB071B8F5DD300A506CE /* ScannerViewController.h */,
+				A1F2EB081B8F5DD300A506CE /* ScannerViewController.m */,
+			);
+			name = Bluetooth;
+			sourceTree = "<group>";
+		};
+		A1F312041B515E1900FAC554 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				A1F312051B515E6E00FAC554 /* AboutViewController.h */,
+				A1F312061B515E6E00FAC554 /* AboutViewController.m */,
+				A1F312081B51603F00FAC554 /* AboutViewController.xib */,
+			);
+			name = About;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A105EE8A1B4571C70029BE4C /* SmartLamp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A105EEAE1B4571C80029BE4C /* Build configuration list for PBXNativeTarget "SmartLamp" */;
+			buildPhases = (
+				A105EE871B4571C70029BE4C /* Sources */,
+				A105EE881B4571C70029BE4C /* Frameworks */,
+				A105EE891B4571C70029BE4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartLamp;
+			productName = SmartLamp;
+			productReference = A105EE8B1B4571C70029BE4C /* SmartLamp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A105EEA31B4571C80029BE4C /* SmartLampTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A105EEB11B4571C80029BE4C /* Build configuration list for PBXNativeTarget "SmartLampTests" */;
+			buildPhases = (
+				A105EEA01B4571C80029BE4C /* Sources */,
+				A105EEA11B4571C80029BE4C /* Frameworks */,
+				A105EEA21B4571C80029BE4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A105EEA61B4571C80029BE4C /* PBXTargetDependency */,
+			);
+			name = SmartLampTests;
+			productName = SmartLampTests;
+			productReference = A105EEA41B4571C80029BE4C /* SmartLampTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A105EE831B4571C70029BE4C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Smart Lamp";
+				TargetAttributes = {
+					A105EE8A1B4571C70029BE4C = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 9CD2VVF4W9;
+					};
+					A105EEA31B4571C80029BE4C = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = A105EE8A1B4571C70029BE4C;
+					};
+				};
+			};
+			buildConfigurationList = A105EE861B4571C70029BE4C /* Build configuration list for PBXProject "SmartLamp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A105EE821B4571C70029BE4C;
+			productRefGroup = A105EE8C1B4571C70029BE4C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A105EE8A1B4571C70029BE4C /* SmartLamp */,
+				A105EEA31B4571C80029BE4C /* SmartLampTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A105EE891B4571C70029BE4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A105EEE51B46D8FC0029BE4C /* CheckerBoard.png in Resources */,
+				A1CC8E541B5107F700A7731F /* Settings.bundle in Resources */,
+				A163562E1BB5AF19000AEDFF /* SwatchColor.png in Resources */,
+				A1F2EB1B1BA3236B00A506CE /* ScannerView.storyboard in Resources */,
+				A105EEBB1B46CEF70029BE4C /* ColorPickerKnob@2x.png in Resources */,
+				A1F3A18C1B47E61500E3B7A4 /* Default-568h@2x.png in Resources */,
+				A163562F1BB5AF19000AEDFF /* SwatchColor@2x.png in Resources */,
+				A1E14A1D1B49519200516EDD /* RearViewController.xib in Resources */,
+				A105EEBA1B46CEF70029BE4C /* ColorPickerKnob.png in Resources */,
+				A105EEE61B46D8FC0029BE4C /* CheckerBoard@2x.png in Resources */,
+				A1F312091B51603F00FAC554 /* AboutViewController.xib in Resources */,
+				A105EE9C1B4571C70029BE4C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A105EEA21B4571C80029BE4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A105EE871B4571C70029BE4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1625ED01BBFB01F007046A0 /* IASKSpecifier.m in Sources */,
+				A1625EDE1BBFB02A007046A0 /* IASKSwitch.m in Sources */,
+				A1B331111BEF0AF500A645A2 /* BitmapContextRep.m in Sources */,
+				A105EED91B46D5690029BE4C /* KZColorPickerBrightnessSlider.m in Sources */,
+				A1B331101BEF0AF500A645A2 /* BitmapContextManipulator.m in Sources */,
+				A1625EDF1BBFB02A007046A0 /* IASKTextField.m in Sources */,
+				A1B331011BEF0ACE00A645A2 /* CGContextCreator.m in Sources */,
+				A105EEE91B46DF2B0029BE4C /* SmartLampViewController.m in Sources */,
+				A1B331021BEF0ACE00A645A2 /* CGImageContainer.m in Sources */,
+				A1625ECF1BBFB01F007046A0 /* IASKSettingsStoreUserDefaults.m in Sources */,
+				A1F2EB0C1B8F5DD300A506CE /* ScannerViewController.m in Sources */,
+				A1B331121BEF0AF500A645A2 /* BitmapCropManipulator.m in Sources */,
+				A1625ECC1BBFB01F007046A0 /* IASKSettingsReader.m in Sources */,
+				A1B331151BEF0AF500A645A2 /* BitmapScaleManipulator.m in Sources */,
+				A1F2EB0B1B8F5DD300A506CE /* LeDiscovery.m in Sources */,
+				A1F2EB0A1B8F5DD300A506CE /* LeDataService.m in Sources */,
+				A1B330EA1BEF0A6900A645A2 /* RSColorFunctions.m in Sources */,
+				A1B330FB1BEF0AB500A645A2 /* UIImage+ANImageBitmapRep.m in Sources */,
+				A1625EC01BBFB011007046A0 /* IASKMultipleValueSelection.m in Sources */,
+				A1B330ED1BEF0A6900A645A2 /* RSGenerateOperation.m in Sources */,
+				A1625ECE1BBFB01F007046A0 /* IASKSettingsStoreFile.m in Sources */,
+				A105EEC01B46CFD50029BE4C /* KZColorPicker.m in Sources */,
+				A1625EC11BBFB011007046A0 /* IASKSpecifierValuesViewController.m in Sources */,
+				A1625EBE1BBFB011007046A0 /* IASKAppSettingsViewController.m in Sources */,
+				A105EEDC1B46D5780029BE4C /* HSV.c in Sources */,
+				A105EED81B46D5690029BE4C /* KZColorPickerAlphaSlider.m in Sources */,
+				A105EEE11B46D61D0029BE4C /* KZUnitSlider.m in Sources */,
+				A1B330EB1BEF0A6900A645A2 /* RSColorPickerState.m in Sources */,
+				A1F2EB091B8F5DD300A506CE /* BLECell.m in Sources */,
+				A1E14A201B49551100516EDD /* SWRevealViewController.m in Sources */,
+				A1B330F11BEF0A9200A645A2 /* ANImageBitmapRep.m in Sources */,
+				A1B330FA1BEF0AB500A645A2 /* OSCommonImage.m in Sources */,
+				A1F312071B515E6E00FAC554 /* AboutViewController.m in Sources */,
+				A105EE941B4571C70029BE4C /* AppDelegate.m in Sources */,
+				A1B331141BEF0AF500A645A2 /* BitmapRotationManipulator.m in Sources */,
+				A105EE911B4571C70029BE4C /* main.m in Sources */,
+				A1B23B9B1B479136003A8CCF /* KZColorStatusView.m in Sources */,
+				A1625EDD1BBFB02A007046A0 /* IASKSlider.m in Sources */,
+				A1625ECD1BBFB01F007046A0 /* IASKSettingsStore.m in Sources */,
+				A1625EBF1BBFB011007046A0 /* IASKAppSettingsWebViewController.m in Sources */,
+				A1625EDB1BBFB02A007046A0 /* IASKPSSliderSpecifierViewCell.m in Sources */,
+				A1B330F91BEF0AB500A645A2 /* NSImage+ANImageBitmapRep.m in Sources */,
+				A1625EDC1BBFB02A007046A0 /* IASKPSTextFieldSpecifierViewCell.m in Sources */,
+				A1B330EC1BEF0A6900A645A2 /* RSColorPickerView.m in Sources */,
+				A1B331131BEF0AF500A645A2 /* BitmapDrawManipulator.m in Sources */,
+				A1E14A1B1B49514600516EDD /* RearViewController.m in Sources */,
+				A105EEC61B46D2370029BE4C /* KZColorPickerSwatchView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A105EEA01B4571C80029BE4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A105EEAB1B4571C80029BE4C /* SmartLampTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A105EEA61B4571C80029BE4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A105EE8A1B4571C70029BE4C /* SmartLamp */;
+			targetProxy = A105EEA51B4571C80029BE4C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A105EEAC1B4571C80029BE4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A105EEAD1B4571C80029BE4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A105EEAF1B4571C80029BE4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = SmartLamp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "smartlamp.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A105EEB01B4571C80029BE4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = SmartLamp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "smartlamp.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A105EEB21B4571C80029BE4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SmartLampTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "smartlamp.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartLamp.app/SmartLamp";
+			};
+			name = Debug;
+		};
+		A105EEB31B4571C80029BE4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SmartLampTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "smartlamp.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartLamp.app/SmartLamp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A105EE861B4571C70029BE4C /* Build configuration list for PBXProject "SmartLamp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A105EEAC1B4571C80029BE4C /* Debug */,
+				A105EEAD1B4571C80029BE4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A105EEAE1B4571C80029BE4C /* Build configuration list for PBXNativeTarget "SmartLamp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A105EEAF1B4571C80029BE4C /* Debug */,
+				A105EEB01B4571C80029BE4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A105EEB11B4571C80029BE4C /* Build configuration list for PBXNativeTarget "SmartLampTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A105EEB21B4571C80029BE4C /* Debug */,
+				A105EEB31B4571C80029BE4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A105EE831B4571C70029BE4C /* Project object */;
+}
